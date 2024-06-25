@@ -1,0 +1,115 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Sans-Serif;
+  background-color: hsl(222, 47.4%, 11.2%);
+  color: hsl(214, 31.8%, 91.4%);
+}
+
+body > * {
+  margin-bottom: 2%;
+}
+
+.banner {
+  width: 100%;
+  aspect-ratio: 5;
+  /*border: 1px solid;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: inset 2px 2px 10px black;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.banner > .calender {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.events {
+  display: flex;
+  overflow: hidden;
+  /*padding: 50px 0;*/
+}
+
+.calender > .times {
+  font-weight: none;
+  font-size: .7rem;
+}
+
+.event {
+  width: 80%;
+  /*border: 1px solid;*/
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+  margin: 10% 0;
+  object-fit: cover;
+  margin: 30px;
+}
+
+.games {
+  width: 100%;
+  /*border: 1px solid;*/
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-shadow: inset 2px 2px 10px black;
+  padding-top: 10%;
+}
+
+.games > .game {
+  width: 30%;
+  aspect-ratio: 1/1;
+  /*border: 1px solid;*/
+  margin: 5% 10%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+  justify-content: space-around;
+  font-size: .8rem;
+}
+
+.game > .photo {
+  width: 90%;
+  aspect-ratio: 1/1;
+  /*border: 1px solid;*/
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+  transition: .5s;
+}
+
+.game > p {
+  text-align: center;
+}
+
+.game:hover, .event:hover{
+  filter: brightness(0.5);
+}
+
+.footer{
+ height: 30px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-style: italic;
+ font-size: .8rem;
+}
